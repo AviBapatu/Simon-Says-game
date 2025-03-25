@@ -1,0 +1,124 @@
+body {
+    text-align: center;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 0.8rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1),
+                inset 0 0 10px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 0 25px currentColor,
+                inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+    transform: scale(0.95) translateY(2px);
+    box-shadow: 0 0 15px currentColor,
+                inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.yellow {
+    background: #ffd700;
+    color: #ffd700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.red {
+    background: #ff4d4d;
+    color: #ff4d4d;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.6);
+}
+
+.green {
+    background: #4caf50;
+    color: #4caf50;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.6);
+}
+
+.purple {
+    background: #9c27b0;
+    color: #9c27b0;
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.6);
+}
+
+.flash {
+    background: white !important;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.userFlash {
+    background: currentColor !important;
+    box-shadow: 0 0 40px currentColor;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        height: 60px;
+        width: 60px;
+        margin: 0.5rem;
+    }
+}
+
+/* Dark theme styles for other elements */
+.card {
+    background-color: #1e1e1e !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+    color: #ffffff !important;
+}
+
+.card-text {
+    color: #ffffff !important;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.instruction-step {
+    background: linear-gradient(145deg, #1e1e1e, #2d2d2d) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Neon text effects */
+.display-4 {
+    color: #ffffff;
+}
+
+.h3 {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
